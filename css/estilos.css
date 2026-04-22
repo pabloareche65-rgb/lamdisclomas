@@ -104,6 +104,35 @@ body {
     color: white;
 }
 
+/* ===== CATEGORIAS ===== */
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.categoria-card {
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background: black;
+}
+
+/* ===== TITULOS ===== */
+.titulo-seccion {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .categoria img {
     width: 100%;
     height: 160px;
@@ -124,4 +153,8 @@ body {
     padding: 15px;
     border-radius: 50%;
     text-decoration: none;
+}
+
+body {
+    background: red !important;
 }

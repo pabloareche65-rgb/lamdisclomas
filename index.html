@@ -3,19 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>LAMDISC</title>
-<link rel="stylesheet" href="/lamdisclomas/css/estilos.css">
+<link rel="stylesheet" href="css/estilos.css">
 </head>
-<style>
-.categoria-card img {
-    width: 250px !important;
-    height: 180px !important;
-    object-fit: cover !important;
-}
-</style>
 
 <body>
 
-<!-- LOGO / BANNER -->
+<!-- BANNER -->
 <div class="banner">
     <img src="img/logo.jpg" alt="LAMDISC">
 </div>
@@ -32,44 +25,39 @@
     <p>
         📍 Manuel Acevedo Nº 57, Lomas de Zamora<br>
         ☎️ 4244-3965<br>
-        💬 <a href="https://wa.me/5491133088234" target="_blank">WhatsApp 11 3308-8234</a>
+        💬 <a href="https://wa.me/5491133088234" target="_blank">WhatsApp 11 3308-8234</a><br>
+        📸 <a href="https://instagram.com/todelec2025" target="_blank" class="insta">@todelec2025</a>
     </p>
 </div>
 
-<!-- PRODUCTOS DESTACADOS -->
+<!-- DESTACADOS -->
 <h2 class="titulo-seccion">Productos Destacados</h2>
 
-<div class="buscador">
-    <input type="text" id="buscar" placeholder="Buscar modelo o código...">
-</div>
+<div class="productos" id="contenedor-productos"></div>
 
-<div class="productos" id="contenedor-productos">
-    <!-- Se cargan automáticamente desde CSV -->
-</div>
-
-<!-- CATEGORÍAS -->
+<!-- CATEGORIAS -->
 <h2 class="titulo-seccion">Categorías</h2>
 
 <div class="categorias">
 
     <a href="lamparas.html" class="categoria-card">
-        <img src="img/categorias/lamparas.jpg" alt="Lámparas">
+        <img src="img/categoria/lamparas.jpg">
         <h3>Lámparas completas</h3>
     </a>
 
     <a href="bulbos.html" class="categoria-card">
-        <img src="img/categorias/bulbos.jpg" alt="Bulbos">
+        <img src="img/categoria/bulbos.jpg">
         <h3>Bulbos</h3>
     </a>
 
     <a href="servicio.html" class="categoria-card">
-        <img src="img/categorias/servicio3.jpg" alt="Servicio técnico">
-        <h3>Servicio técnico</h3>
+        <img src="img/categoria/servicio3.jpg">
+        <h3>Servicio Técnico</h3>
     </a>
 
 </div>
 
-<!-- WHATSAPP FLOTANTE -->
+<!-- WHATSAPP -->
 <a href="https://wa.me/5491133088234" class="whatsapp">💬</a>
 
 <script src="js/app.js"></script>

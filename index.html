@@ -8,9 +8,9 @@
 
 <body>
 
-<!-- BANNER -->
+<!-- LOGO / BANNER -->
 <div class="banner">
-    <img src="img/logo.jpg" alt="LAMDISC Logo">
+    <img src="img/logo.jpg" alt="LAMDISC">
 </div>
 
 <!-- INFO -->
@@ -29,43 +29,38 @@
     </p>
 </div>
 
-<!-- BUSCADOR -->
-<div class="buscador">
-    <input type="text" placeholder="Buscar modelo de proyector...">
-</div>
-
-<!-- PRODUCTOS AUTOMÁTICOS -->
+<!-- PRODUCTOS DESTACADOS -->
 <h2 class="titulo-seccion">Productos Destacados</h2>
 
-<div class="productos" id="contenedor-productos"></div>
+<div class="productos" id="contenedor-productos">
+    <!-- Se cargan automáticamente desde CSV -->
+</div>
 
-<!-- CATEGORIAS -->
+<!-- CATEGORÍAS -->
 <h2 class="titulo-seccion">Categorías</h2>
 
 <div class="categorias">
 
-    <a href="lamparas.html" class="categoria">
-        <img src="img/categorias/lamparas.jpg">
+    <a href="lamparas.html" class="categoria-card">
+        <img src="img/categorias/lamparas.jpg" alt="Lámparas">
         <h3>Lámparas completas</h3>
     </a>
 
-    <a href="bulbos.html" class="categoria">
-        <img src="img/categorias/bulbos.jpg">
+    <a href="bulbos.html" class="categoria-card">
+        <img src="img/categorias/bulbos.jpg" alt="Bulbos">
         <h3>Bulbos</h3>
     </a>
 
-    <a href="servicio.html" class="categoria">
-        <img src="img/categorias/servicio3.jpg">
+    <a href="servicio.html" class="categoria-card">
+        <img src="img/categorias/servicio3.jpg" alt="Servicio técnico">
         <h3>Servicio técnico</h3>
     </a>
 
 </div>
 
-<!-- WHATSAPP -->
+<!-- WHATSAPP FLOTANTE -->
 <a href="https://wa.me/5491133088234" class="whatsapp">💬</a>
 
-<!-- SCRIPTS -->
-<script src="js/productos.js"></script>
 <script src="js/app.js"></script>
 
 </body>

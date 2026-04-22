@@ -5,15 +5,13 @@ async function cargarCSV() {
     const filas = data.trim().split(/\r?\n/).slice(1);
 
     const productos = filas.map(fila => {
-
-        // Detecta si es ; o ,
         const columnas = fila.includes(";") ? fila.split(";") : fila.split(",");
 
         return {
-            nombre: columnas[0] ? columnas[0].trim() : "",
-            descripcion: columnas[1] ? columnas[1].trim() : "",
-            precio: columnas[2] ? columnas[2].trim() : "",
-            categoria: columnas[3] ? columnas[3].trim().toLowerCase() : ""
+            nombre: columnas[0]?.trim(),
+            descripcion: columnas[1]?.trim(),
+            precio: columnas[2]?.trim(),
+            categoria: columnas[3]?.trim().toLowerCase()
         };
     });
 
@@ -26,16 +24,21 @@ function mostrarProductos(productos) {
 
     const pagina = window.location.pathname.toLowerCase();
 
+    let categoriaPagina = "";
+
+    if (pagina.includes("lamparas")) {
+        categoriaPagina = "lamparas";
+    } else if (pagina.includes("bulbos")) {
+        categoriaPagina = "bulbos";
+    }
+
     productos.forEach(prod => {
 
-        // FILTROS POR PAGINA
-        if (pagina.includes("lamparas") && prod.categoria !== "lamparas") return;
-        if (pagina.includes("bulbos") && prod.categoria !== "bulbos") return;
+        // FILTRAR SOLO SI NO ES INDEX
+        if (categoriaPagina && prod.categoria !== categoriaPagina) return;
 
         // EN INDEX SOLO 3 PRODUCTOS
-        if (!pagina.includes("lamparas") && !pagina.includes("bulbos")) {
-            if (contenedor.children.length >= 3) return;
-        }
+        if (!categoriaPagina && contenedor.children.length >= 3) return;
 
         const card = `
             <div class="card">

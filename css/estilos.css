@@ -1,164 +1,166 @@
+/* ===== RESET ===== */
 body {
     margin: 0;
-    font-family: Arial;
-    background: #000;
-    color: white;
-    text-align: center;
+    background: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* BANNER */
+/* ===== BANNER ===== */
 .banner {
-    width: 100%;
-    padding: 20px 0;
-    background: black;
+    text-align: center;
+    background: #000;
+    padding: 10px;
 }
 
 .banner img {
-    max-width: 300px;
+    max-width: 100%;
+    max-height: 220px;
+    object-fit: contain;
 }
 
-/* INFO */
+/* ===== INFO BOX ===== */
 .info-box {
-    max-width: 900px;
+    background: #111;
+    padding: 20px;
     margin: 20px auto;
-    background: #111;
-    padding: 25px;
-    border-radius: 15px;
-}
-
-/* TITULOS */
-.titulo-seccion {
-    margin-top: 40px;
-}
-
-/* BUSCADOR */
-.buscador {
-    margin: 20px;
-}
-
-.buscador input {
-    padding: 10px;
-    width: 300px;
-    border-radius: 8px;
-    border: none;
-}
-
-/* PRODUCTOS */
-.productos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background: #111;
-    width: 250px;
+    max-width: 800px;
     border-radius: 12px;
-    overflow: hidden;
-    padding-bottom: 10px;
-}
-
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    background: #000;
-}
-
-.card h3, .card p {
-    margin: 10px;
-}
-
-.precio {
-    color: cyan;
-    font-weight: bold;
-}
-
-/* BOTON */
-.btn {
-    display: block;
-    margin: 10px;
-    padding: 10px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-/* CATEGORIAS */
-.categorias {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin: 40px;
-}
-
-.categoria {
-    width: 250px;
-    background: #111;
-    padding: 15px;
-    border-radius: 15px;
-    text-decoration: none;
-    color: white;
-}
-
-/* ===== CATEGORIAS ===== */
-.categorias {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin: 30px 0;
-}
-
-.categoria-card {
-    width: 250px;
     text-align: center;
-    text-decoration: none;
-    color: white;
-}
-
-.categoria-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: contain;
-    background: black;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
 
 /* ===== TITULOS ===== */
 .titulo-seccion {
     text-align: center;
     margin-top: 30px;
+    font-size: 22px;
 }
 
-.categoria img {
+/* ===== PRODUCTOS ===== */
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #141414;
+    border-radius: 12px;
+    padding: 15px;
+    width: 240px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0,0,0,0.7);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.card img {
     width: 100%;
-    height: 160px;
+    height: 140px;
     object-fit: contain;
     background: #000;
+    border-radius: 8px;
+    padding: 5px;
 }
 
-.categoria h3 {
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* ===== PRECIO ===== */
+.precio {
+    font-size: 18px;
+    color: #00ffcc;
+    margin: 10px 0;
+}
+
+/* ===== BOTON ===== */
+.btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.btn:hover {
+    background: #1ebe5d;
+}
+
+/* ===== CATEGORIAS ===== */
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.categoria-card {
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.categoria-card:hover {
+    transform: scale(1.05);
+}
+
+.categoria-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    background: #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.categoria-card h3 {
     margin-top: 10px;
 }
 
-/* WHATSAPP */
+/* ===== WHATSAPP FLOTANTE ===== */
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #25D366;
-    padding: 15px;
+    padding: 14px;
     border-radius: 50%;
+    font-size: 22px;
     text-decoration: none;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
-body {
-    background: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
+/* ===== INSTAGRAM ===== */
+.insta {
+    color: #ff4da6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.insta:hover {
+    text-decoration: underline;
 }
 
 /* ===== TIPS ===== */
@@ -168,7 +170,7 @@ body {
     margin: 10px auto;
 }
 
-/* ===== BLOQUE TECNICO PRO ===== */
+/* ===== ALERTA TECNICA ===== */
 .alerta-tecnica {
     background: linear-gradient(135deg, #1a1a1a, #000);
     border: 1px solid #ff4d4d;
@@ -179,20 +181,17 @@ body {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    color: #fff;
 }
 
 .alerta-tecnica h3 {
     color: #ff4d4d;
-    margin-bottom: 10px;
 }
 
 .alerta-tecnica ul {
     text-align: left;
-    margin-top: 10px;
 }
 
-/* BOTON DIAGNOSTICO */
+/* ===== BOTON DIAGNOSTICO ===== */
 .btn-diagnostico {
     display: inline-block;
     margin-top: 15px;

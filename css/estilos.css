@@ -206,3 +206,10 @@ body {
 .btn-diagnostico:hover {
     background: #1ebe5d;
 }
+
+/* ICONO INSTAGRAM */
+.fa-instagram {
+    color: #E1306C;
+    margin-right: 5px;
+    font-size: 18px;
+}
